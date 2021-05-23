@@ -1,0 +1,31 @@
+.mainCarousel__carousel {
+  background-color: #2592cf;
+  padding: 0 30px;
+}
+
+.mainCarousel__contentStyle > div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainCarousel__contentStyle h1,
+.mainCarousel__contentStyle p {
+  color: #fff;
+}
+
+.mainCarousel__contentStyle {
+  height: 400px;
+}
+
+.mainCarousel__dots li button {
+  background: #fff !important;
+}
+
+@media screen and (min-width: 768px) {
+  .mainCarousel__carousel {
+    padding: 0 300px;
+  }
+}
