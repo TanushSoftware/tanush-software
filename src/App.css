@@ -1,0 +1,23 @@
+@import "~antd/dist/antd.css";
+
+:root {
+  --primary: #2592cf;
+  --primary-lighter: #8ec9ea;
+  --primary-darker: #124967;
+  --white: #ffffff;
+}
+
+.content_root {
+  padding: 20px 0 40px 0;
+}
+
+.content_title {
+  padding: 1.5rem 0;
+  margin-bottom: 0 !important;
+  text-align: center;
+  color: var(--primary) !important;
+}
+
+.white {
+  color: #fff !important;
+}

@@ -1,7 +1,8 @@
+import "./App.css";
+import PageLayout from "./layout/PageLayout";
+
 function App() {
-  return (
-    <h1>Welcome</h1>
-  );
+  return <PageLayout></PageLayout>;
 }
 
 export default App;
