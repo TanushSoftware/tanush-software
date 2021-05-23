@@ -1,0 +1,28 @@
+.testCard__card {
+  height: 300px;
+  margin: 30px 0 50px 0;
+  border-radius: 10px;
+}
+
+.testCard__title {
+  font-weight: 400 !important;
+  color: #444 !important;
+  text-align: center;
+  font-style: italic;
+}
+
+.testCard__title::before {
+  font-family: Arial;
+  content: "\201C";
+  color: #ccc;
+  font-size: 4em;
+  position: absolute;
+  left: 5px;
+  top: -10px;
+}
+
+.testCard__subtitle {
+  font-weight: 400 !important;
+  color: #444 !important;
+  text-align: center;
+}

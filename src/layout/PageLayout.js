@@ -6,6 +6,7 @@ import Paragraph from "antd/lib/typography/Paragraph";
 import MainCarousel from "../components/MainCarousel";
 import Services from "../layout/Services";
 import Products from "../layout/Products";
+import Testimonials from "../layout/Testimonials";
 import Clients from "../layout/Clients";
 
 const { Header, Content, Footer } = Layout;
@@ -49,6 +50,7 @@ const PageLayout = () => {
           <MainCarousel topRef={topRef} />
           <Services servicesRef={servicesRef} />
           <Products productsRef={productsRef} />
+          <Testimonials />
           <Clients clientsRef={clientsRef} />
         </div>
       </Content>

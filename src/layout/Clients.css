@@ -1,0 +1,20 @@
+.clients__list {
+  display: flex;
+  margin: 40px 0;
+}
+
+.clients__img {
+  height: 80px;
+  margin: 0 40px;
+}
+
+.clients__image {
+  padding: 20px;
+  border-radius: 8px;
+  margin: 0 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.clients__image:hover {
+  background-color: var(--primary);
+}

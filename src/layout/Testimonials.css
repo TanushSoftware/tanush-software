@@ -1,0 +1,14 @@
+.mainCarousel__carousel {
+  background-color: #2592cf;
+  padding: 0 30px;
+}
+
+.mainCarousel__dots li button {
+  background: #fff !important;
+}
+
+@media screen and (min-width: 768px) {
+  .mainCarousel__carousel {
+    padding: 0 300px;
+  }
+}
