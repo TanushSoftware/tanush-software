@@ -8,6 +8,8 @@ import Services from "../layout/Services";
 import Products from "../layout/Products";
 import Testimonials from "../layout/Testimonials";
 import Clients from "../layout/Clients";
+import About from "../layout/About";
+import Contact from "./Contact";
 
 const { Header, Content, Footer } = Layout;
 
@@ -16,6 +18,8 @@ const PageLayout = () => {
   const productsRef = useRef(null);
   const clientsRef = useRef(null);
   const topRef = useRef(null);
+  const aboutsRef = useRef(null);
+  const contactsRef = useRef(null);
 
   const scrollTo = (ref) => {
     window.scrollTo({
@@ -23,6 +27,7 @@ const PageLayout = () => {
       behavior: "smooth",
     });
   };
+
 
   return (
     <Layout className="layout">
@@ -41,8 +46,12 @@ const PageLayout = () => {
           <Menu.Item key="3" onClick={() => scrollTo(clientsRef)}>
             Clients
           </Menu.Item>
-          <Menu.Item key="4">About us</Menu.Item>
-          <Menu.Item key="5">Contact us</Menu.Item>
+          <Menu.Item key="4" onClick={() => scrollTo(aboutsRef)}>
+            About us
+          </Menu.Item>
+          <Menu.Item key="5" onClick={() => scrollTo(contactsRef)}>
+            Contact us
+            </Menu.Item>
         </Menu>
       </Header>
       <Content>
@@ -52,7 +61,9 @@ const PageLayout = () => {
           <Products productsRef={productsRef} />
           <Testimonials />
           <Clients clientsRef={clientsRef} />
+          <About aboutsRef={aboutsRef} />
         </div>
+
       </Content>
       <Footer className="pageLayout__footer">
         <Row justify="space-between" align="middle">
@@ -61,7 +72,7 @@ const PageLayout = () => {
               <img
                 src="assets/logo_without_text.png"
                 alt="Tanush Software Logo"
-              />
+               />
               <span className="pageLayout__title">Tanush Software</span>
             </div>
           </Col>
@@ -73,6 +84,8 @@ const PageLayout = () => {
               <Text strong>Email Address: </Text>tanushsoftware@gmail.com
             </Paragraph>
           </Col>
+          <Contact contactsRef={contactsRef} />
+          
         </Row>
         <div className="pageLayout__copyright">Tanush Software ©2021</div>
       </Footer>
