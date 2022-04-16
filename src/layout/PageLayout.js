@@ -6,7 +6,7 @@ import Paragraph from "antd/lib/typography/Paragraph";
 import MainCarousel from "../components/MainCarousel";
 import Services from "../layout/Services";
 import Products from "../layout/Products";
-import Testimonials from "../layout/Testimonials";
+// import Testimonials from "../layout/Testimonials";
 import Clients from "../layout/Clients";
 
 const { Header, Content, Footer } = Layout;
@@ -15,6 +15,7 @@ const PageLayout = () => {
   const servicesRef = useRef(null);
   const productsRef = useRef(null);
   const clientsRef = useRef(null);
+  const contactUsRef = useRef(null);
   const topRef = useRef(null);
 
   const scrollTo = (ref) => {
@@ -41,8 +42,8 @@ const PageLayout = () => {
           <Menu.Item key="3" onClick={() => scrollTo(clientsRef)}>
             Clients
           </Menu.Item>
-          <Menu.Item key="4">About us</Menu.Item>
-          <Menu.Item key="5">Contact us</Menu.Item>
+          {/* <Menu.Item key="4">About us</Menu.Item> */}
+          <Menu.Item key="5"  onClick={() => scrollTo(clientsRef)}>Contact us</Menu.Item>
         </Menu>
       </Header>
       <Content>
@@ -50,11 +51,11 @@ const PageLayout = () => {
           <MainCarousel topRef={topRef} />
           <Services servicesRef={servicesRef} />
           <Products productsRef={productsRef} />
-          <Testimonials />
+          {/* <Testimonials /> */}
           <Clients clientsRef={clientsRef} />
         </div>
       </Content>
-      <Footer className="pageLayout__footer">
+      <Footer className="pageLayout__footer" ref={contactUsRef}>
         <Row justify="space-between" align="middle">
           <Col xs={24} md={6}>
             <div className="logo">

@@ -1,6 +1,10 @@
+.ant-card-body{
+  padding-top: 0px !important;
+}
+
 .customCard__card {
-  height: 200px;
-  width: 300px;
+  min-height: 230px;
+  max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +22,8 @@
 
 .customCard__card p {
   font-size: 1.5em;
-  color: var(--primary) !important;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 .customCard__icon {
@@ -30,14 +35,19 @@
 }
 
 .customCard__card:hover {
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
 }
 
 .customCard__card:hover p {
-  color: #fff !important;
+  color: black !important;
+  font-weight: 600;
 }
 
 .customCard__card:hover .customCard__icon {
   background-color: #fff;
   color: var(--primary);
+}
+
+.customCard__image {
+  border-radius: 4px;
 }

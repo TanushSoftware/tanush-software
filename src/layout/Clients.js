@@ -47,6 +47,16 @@ const Clients = ({ clientsRef }) => {
       title: "photish",
       imageUrl: "photish.png",
     },
+    {
+      id: 9,
+      title: "Goals and Gambles",
+      imageUrl: "g&g.png",
+    },
+    {
+      id: 10,
+      title: "Sight & Sound",
+      imageUrl: "Sight&Sound.png",
+    },
   ]);
   return (
     <div className="clients content_root" ref={clientsRef}>
@@ -54,7 +64,7 @@ const Clients = ({ clientsRef }) => {
         Our Clients
       </Title>
       <div className="clients__list">
-        <Marquee gradient={false} speed={50}>
+        <Marquee gradient={false} speed={100}>
           {clients.map((client) => (
             <div className="clients__image" key={client.id}>
               <img

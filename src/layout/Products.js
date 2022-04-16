@@ -10,15 +10,25 @@ const Products = ({ productsRef }) => {
       <Title level={2} className="products__title content_title">
         Products
       </Title>
+      <br/><br/>
       <Row className="products__row">
         <Col xs={24} lg={8}>
-          <CustomCard text="Development" />
+          <CustomCard
+            text="Cloud invoicing and appointment management"
+            showSandBox={false}
+            srcURL="assets/products/invoice-management.png"
+          />
         </Col>
         <Col xs={24} lg={8}>
-          <CustomCard text="Maintenance " />
+          <CustomCard
+            text="Production and employee management"
+            showSandBox={false}
+            srcURL="assets/products/production-management.png"
+          />
         </Col>
         <Col xs={24} lg={8}>
-          <CustomCard text="Consulting" />
+          <CustomCard text="Stock Management"     showSandBox={false}
+            srcURL="assets/products/stock-management.png" />
         </Col>
       </Row>
     </div>

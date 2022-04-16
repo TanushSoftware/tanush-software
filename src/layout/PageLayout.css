@@ -1,5 +1,5 @@
 .site-layout-content {
-  background: #fff;
+  background: #f0f0f0;
   padding-bottom: 20px;
 }
 
@@ -29,7 +29,8 @@
 }
 
 .pageLayout__footer {
-  background-color: #fff;
+  margin-top: 30px;
+  background-color: #f0f0f0;
   /* box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.16), */
   /* 0 1px 5px 0 rgba(0, 0, 0, 0.06); */
   box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2);

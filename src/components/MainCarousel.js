@@ -15,12 +15,11 @@ const MainCarousel = ({ topRef }) => {
         <div className="mainCarousel__contentStyle">
           <div>
             <Title>Welcome to Tanush Software</Title>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              provident eos commodi corporis, laborum neque placeat id maxime
-              dolor delectus! Numquam ratione fuga possimus aut illum veniam
-              animi officia saepe!
-            </p>
+          </div>
+        </div>
+        {/* <div className="mainCarousel__contentStyle">
+          <div>
+            <Title>Code Quality Matters</Title>
           </div>
         </div>
         <div className="mainCarousel__contentStyle">
@@ -44,18 +43,7 @@ const MainCarousel = ({ topRef }) => {
               animi officia saepe!
             </p>
           </div>
-        </div>
-        <div className="mainCarousel__contentStyle">
-          <div>
-            <Title>Welcome to Tanush Software</Title>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum
-              provident eos commodi corporis, laborum neque placeat id maxime
-              dolor delectus! Numquam ratione fuga possimus aut illum veniam
-              animi officia saepe!
-            </p>
-          </div>
-        </div>
+        </div> */}
       </Carousel>
     </div>
   );
