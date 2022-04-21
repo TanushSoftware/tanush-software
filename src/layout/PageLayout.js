@@ -75,7 +75,7 @@ const PageLayout = () => {
             </Paragraph>
           </Col>
         </Row>
-        <div className="pageLayout__copyright">Tanush Software ©2021</div>
+        <div className="pageLayout__copyright">Tanush Software ©2022</div>
       </Footer>
     </Layout>
   );
