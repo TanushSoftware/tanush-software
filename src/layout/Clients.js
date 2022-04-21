@@ -57,6 +57,11 @@ const Clients = ({ clientsRef }) => {
       title: "Sight & Sound",
       imageUrl: "Sight&Sound.png",
     },
+    {
+      id: 11,
+      title: "Scale up consulting",
+      imageUrl: "scaleup.png",
+    }
   ]);
   return (
     <div className="clients content_root" ref={clientsRef}>
