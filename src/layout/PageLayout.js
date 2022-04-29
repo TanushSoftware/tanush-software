@@ -81,7 +81,7 @@ const PageLayout = () => {
                 class="elementor-icon"
                 href="https://clutch.co/profile/tanush-software#reviews"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 {" "}
                 <svg
