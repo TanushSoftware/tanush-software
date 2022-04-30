@@ -58,23 +58,62 @@ const PageLayout = () => {
         </div>
       </Content>
       <Footer className="pageLayout__footer" ref={contactUsRef}>
-        <Row justify="space-between" align="middle">
-          <Col xs={24} md={6}>
+        <Row justify="space-between">
+          <Col xs={8} md={6}>
             <div className="logo">
               <img
                 src="assets/logo_without_text.png"
                 alt="Tanush Software Logo"
               />
               <span className="pageLayout__title">Tanush Software</span>
+              <p>
+                The result of years of custom software development and startup
+                consulting. We offer a wide range of services tailored to help
+                clients ease the process of scaling their businesses. We are
+                committed to providing startups and small businesses with
+                much-needed IT support.
+              </p>
             </div>
           </Col>
-          <Col xs={24} md={6}>
+          <Col xs={8} md={6}>
+            <h2>
+              <b>Our Services</b>
+            </h2>
+            <p>IT Consulting</p>
+            <p>Web App Development</p>
+            <p>Mobile App Development</p>
+            <p>Data Analytics</p>
+            <p>Job Support</p>
+          </Col>
+          <Col xs={8} md={6}>
             <h2>
               <b> Let’s Connect</b>
             </h2>
             <Paragraph>
               <Text strong>Email: </Text>tanushsoftware@gmail.com
             </Paragraph>
+
+            <Row>
+              <Col>
+                <a
+                  class="elementor-icon"
+                  href="https://www.linkedin.com/company/tanush-software"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                  </svg>
+                </a>
+              </Col>
+            </Row>
+
+            <br />
             <div class="elementor-icon-wrapper">
               {" "}
               <a
@@ -128,7 +167,8 @@ const PageLayout = () => {
             </div>
           </Col>
         </Row>
-        <div className="pageLayout__copyright">Tanush Software ©2022</div>
+        <hr></hr>
+        <div>© Copyright 2022 All Rights Reserved</div>
       </Footer>
     </Layout>
   );
