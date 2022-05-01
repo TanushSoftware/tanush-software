@@ -6,6 +6,7 @@
 .logo {
   height: 64px;
   cursor: pointer;
+  position: relative;
 }
 
 .logo img {
