@@ -1,8 +1,6 @@
 import React, { useRef } from "react";
 import { Col, Layout, Menu, Row } from "antd";
 import "./PageLayout.css";
-import Text from "antd/lib/typography/Text";
-import Paragraph from "antd/lib/typography/Paragraph";
 import MainCarousel from "../components/MainCarousel";
 import Services from "../layout/Services";
 import Products from "../layout/Products";
@@ -54,11 +52,21 @@ const PageLayout = () => {
           <Services servicesRef={servicesRef} />
           <Products productsRef={productsRef} />
           {/* <Testimonials /> */}
+          <div
+            class="clutch-widget"
+            data-nofollow="true"
+            data-url="https://widget.clutch.co"
+            data-widget-type="12"
+            data-height="375"
+            data-clutchcompany-id="1927317"
+          ></div>
           <Clients clientsRef={clientsRef} />
         </div>
       </Content>
-      <Footer className="pageLayout__footer" ref={contactUsRef}>
-        <Row justify="space-between">
+      
+      <Footer ref={contactUsRef}>
+      <hr/>
+        <Row justify="space-between" style={{marginTop: 20}}>
           <Col xs={6} md={6} sm={24}>
             <div className="logo">
               <img
@@ -199,7 +207,9 @@ const PageLayout = () => {
           </Col>
         </Row>
         <hr></hr>
-        <div style={{textAlign: "right"}}>© Copyright 2022 All Rights Reserved</div>
+        <div style={{ textAlign: "right" }}>
+          © Copyright 2022 All Rights Reserved
+        </div>
       </Footer>
     </Layout>
   );

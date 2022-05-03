@@ -1,16 +1,13 @@
-import { Col, Row, Typography } from "antd";
+import { Col, Row } from "antd";
 import CustomCard from "../components/CustomCard";
 import "./Products.css";
-
-const { Title } = Typography;
 
 const Products = ({ productsRef }) => {
   return (
     <div className="products content_root" ref={productsRef}>
-      <Title level={2} className="products__title content_title">
-        Products
-      </Title>
-      <br/><br/>
+      <p className="clients__title">Products</p>
+      <br />
+      
       <Row className="products__row">
         <Col xs={24} lg={8}>
           <CustomCard
@@ -27,8 +24,11 @@ const Products = ({ productsRef }) => {
           />
         </Col>
         <Col xs={24} lg={8}>
-          <CustomCard text="Stock Management"     showSandBox={false}
-            srcURL="assets/products/stock-management.png" />
+          <CustomCard
+            text="Stock Management"
+            showSandBox={false}
+            srcURL="assets/products/stock-management.png"
+          />
         </Col>
       </Row>
     </div>

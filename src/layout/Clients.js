@@ -1,9 +1,7 @@
-import { Typography } from "antd";
+import { Card } from "antd";
 import { useState } from "react";
 import Marquee from "react-fast-marquee";
 import "./Clients.css";
-
-const { Title } = Typography;
 
 const Clients = ({ clientsRef }) => {
   const [clients] = useState([
@@ -65,19 +63,19 @@ const Clients = ({ clientsRef }) => {
   ]);
   return (
     <div className="clients content_root" ref={clientsRef}>
-      <Title level={2} className="clients__title content_title">
-        Our Clients
-      </Title>
+      <p className="clients__title">
+      Featured Clients
+      </p>
       <div className="clients__list">
         <Marquee gradient={false} speed={100}>
           {clients.map((client) => (
-            <div className="clients__image" key={client.id}>
+            <Card className="clients__image" key={client.id}>
               <img
                 src={`assets/clients/${client.imageUrl}`}
                 alt={client.title}
                 className="clients__img"
               />
-            </div>
+            </Card>
           ))}
         </Marquee>
       </div>
