@@ -59,13 +59,13 @@ const Clients = ({ clientsRef }) => {
       id: 11,
       title: "Scale up consulting",
       imageUrl: "scaleup.png",
-    }
+    },
   ]);
   return (
     <div className="clients content_root" ref={clientsRef}>
-      <p className="clients__title">
-      Featured Clients
-      </p>
+      <h1 style={{ textAlign: "center", margin: 40, fontSize: 36 }}>
+        Featured Clients
+      </h1>
       <div className="clients__list">
         <Marquee gradient={false} speed={100}>
           {clients.map((client) => (

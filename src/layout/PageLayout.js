@@ -34,9 +34,9 @@ const PageLayout = () => {
           <Menu.Item key="1" onClick={() => scrollTo(servicesRef)}>
             Services
           </Menu.Item>
-          <Menu.Item key="2" onClick={() => scrollTo(productsRef)}>
+          {/* <Menu.Item key="2" onClick={() => scrollTo(productsRef)}>
             Products
-          </Menu.Item>
+          </Menu.Item> */}
           <Menu.Item key="3" onClick={() => scrollTo(clientsRef)}>
             Clients
           </Menu.Item>
@@ -50,7 +50,7 @@ const PageLayout = () => {
         <div className="site-layout-content">
           <MainCarousel topRef={topRef} />
           <Services servicesRef={servicesRef} />
-          <Products productsRef={productsRef} />
+          {/* <Products productsRef={productsRef} /> */}
           {/* <Testimonials /> */}
           <div
             class="clutch-widget"
@@ -84,9 +84,7 @@ const PageLayout = () => {
             </div>
           </Col>
           <Col xs={4} md={4}>
-            <h2>
-              <b>Our Services</b>
-            </h2>
+            <h2>Services We Offer</h2>
             <p>IT Consulting</p>
             <p>Web App Development</p>
             <p>Mobile App Development</p>
