@@ -7,10 +7,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<PageLayout></PageLayout>}>
-          <Route index element={<PageLayout></PageLayout>} />
-          <Route path="privacypolicy" element={<PrivacyPolicy />} />
-        </Route>
+        <Route path="/" element={<PageLayout></PageLayout>}></Route>
+        <Route path="privacypolicy" element={<PrivacyPolicy />} />
       </Routes>
     </BrowserRouter>
   );
