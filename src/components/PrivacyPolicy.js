@@ -1,6 +1,6 @@
 const PrivacyPolicy = () => {
   return (
-    <>
+    <div style={{padding: 50}}>
       <strong>Privacy Policy</strong>{" "}
       <p>
         Tanush Software built the Test Eyes Color Blindness app as a Free app.
@@ -161,7 +161,7 @@ const PrivacyPolicy = () => {
         If you have any questions or suggestions about our Privacy Policy, do
         not hesitate to contact us at info@tanushsoftware.com.
       </p>
-    </>
+    </div>
   );
 };
 
