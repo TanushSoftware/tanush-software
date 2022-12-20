@@ -1,6 +1,3 @@
-import "./App.css";
-
-
 const PrivacyPolicy = () => {
   return (
     <>
