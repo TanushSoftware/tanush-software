@@ -1,8 +1,18 @@
 import "./App.css";
 import PageLayout from "./layout/PageLayout";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  return <PageLayout></PageLayout>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<PageLayout></PageLayout>}>
+          <Route index element={<PageLayout></PageLayout>} />
+          <Route path="privacypolicy" element={<PrivacyPolicy />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 // function ProdApp() {
@@ -13,7 +23,7 @@ function App() {
 //         <h2>🆃🅾 </h2>
 //         <h1>🆃🅰🅽🆄🆂🅷 🆂🅾🅵🆃🆆🅰🆁🅴</h1>
 //       </div>
-      
+
 //       <a href="mailto: tanushsoftware87@gmail.com" style={{ textAlign: "center", transform: "translateX(-50%)", fontSize: 22, color: "black", position: "absolute", bottom: 80, left: "50%", fontStyle:"italic", fontFamily: "monospace" }}>
 //         Connect
 //         </a>
