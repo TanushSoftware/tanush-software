@@ -1,6 +1,5 @@
 import "./App.css";
-import PageLayout from "./layout/PageLayout";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 const PrivacyPolicy = () => {
   return (

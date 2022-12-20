@@ -1,5 +1,6 @@
 import "./App.css";
 import PageLayout from "./layout/PageLayout";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
