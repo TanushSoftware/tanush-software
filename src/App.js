@@ -1,11 +1,6 @@
 import "./App.css";
 import PageLayout from "./layout/PageLayout";
-import PrivacyPolicy from "./components/PrivacyPolicy";
-import PrivacyPolicyCheckBlindness from "./components/PrivacyPolicyCheckBlindness";
-import PrivacyPolicyInternetSpeedTest from "./components/PrivacyPolicyInternetSpeedTest";
-import PrivacyPolicyWhatsToday from "./components/PrivacyPolicyWhatsToday";
-import PrivacyPolicyDailyDeals from "./components/PrivacyPolicyDailyDeals";
-import PrivacyPolicyTransformerTest from "./components/PrivacyPolicyTransformerTest";
+import PP from "./components/PP";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Data = {
