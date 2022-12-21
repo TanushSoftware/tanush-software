@@ -15,7 +15,7 @@ const Data = {
   "daily-deals-privacypolicy": "Daily Deals",
   "speed-test-privacypolicy": "Internet Speed Test",
   "transformer-test-privacypolicy": "Transformer Oil Testing",
-  "ipl-live-privacypolicy": "IPL LIVE",
+  "ipl-live-privacypolicy": "LIVE IPL",
 };
 
 function App() {
