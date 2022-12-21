@@ -11,6 +11,7 @@ function App() {
         <Route path="/" element={<PageLayout></PageLayout>}></Route>
         <Route path="privacypolicy" element={<PrivacyPolicy />} />
         <Route path="check-color-blindness-privacypolicy" element={<PrivacyPolicyCheckBlindness />} />
+        <Route path="whats-today-privacypolicy" element={<PrivacyPolicyWhatsToday />} />
       </Routes>
     </BrowserRouter>
   );
