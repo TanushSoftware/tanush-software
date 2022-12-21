@@ -9,7 +9,7 @@ import PrivacyPolicyTransformerTest from "./components/PrivacyPolicyTransformerT
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const Data = {
-  "privacypolicy": "Test Eyes Color Blindness",
+  privacypolicy: "Test Eyes Color Blindness",
   "check-color-blindness-privacypolicy": "Check Color Blindness",
   "whats-today-privacypolicy": "Whats Today",
   "daily-deals-privacypolicy": "Daily Deals",
