@@ -3,7 +3,7 @@ const PrivacyPolicy = () => {
     <div style={{padding: 50}}>
       <strong>Privacy Policy</strong>{" "}
       <p>
-        Tanush Software built the Test Check Color Blindness app as a Free app.
+        Tanush Software built the Internet Speed Test app as a Free app.
         This SERVICE is provided by Tanush Software at no cost and is intended
         for use as is.
       </p>{" "}
@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
       </p>{" "}
       <p>
         The terms used in this Privacy Policy have the same meanings as in our
-        Terms and Conditions, which are accessible at Test Check Color Blindness
+        Terms and Conditions, which are accessible at Internet Speed Test
         unless otherwise defined in this Privacy Policy.
       </p>{" "}
       <p>
