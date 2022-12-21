@@ -1,9 +1,9 @@
-const PrivacyPolicy = () => {
+const PP = ({name}) => {
   return (
     <div style={{padding: 50}}>
       <strong>Privacy Policy</strong>{" "}
       <p>
-        Tanush Software built the What's Today  app as a Free app.
+        Tanush Software built the {name} app as a Free app.
         This SERVICE is provided by Tanush Software at no cost and is intended
         for use as is.
       </p>{" "}
@@ -21,7 +21,7 @@ const PrivacyPolicy = () => {
       </p>{" "}
       <p>
         The terms used in this Privacy Policy have the same meanings as in our
-        Terms and Conditions, which are accessible at What's Today 
+        Terms and Conditions, which are accessible at {name}
         unless otherwise defined in this Privacy Policy.
       </p>{" "}
       <p>

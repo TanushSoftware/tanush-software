@@ -8,21 +8,27 @@ import PrivacyPolicyDailyDeals from "./components/PrivacyPolicyDailyDeals";
 import PrivacyPolicyTransformerTest from "./components/PrivacyPolicyTransformerTest";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+const Data = {
+  "privacypolicy": "Test Eyes Color Blindness",
+  "check-color-blindness-privacypolicy": "Check Color Blindness",
+  "whats-today-privacypolicy": "Whats Today",
+  "daily-deals-privacypolicy": "Daily Deals",
+  "speed-test-privacypolicy": "Internet Speed Test",
+  "transformer-test-privacypolicy": "Transformer Oil Testing",
+  "ipl-live-privacypolicy": "IPL LIVE",
+};
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<PageLayout></PageLayout>}></Route>
-        <Route path="privacypolicy" element={<PrivacyPolicy />} />
-        <Route path="check-color-blindness-privacypolicy" element={<PrivacyPolicyCheckBlindness />} />
-        <Route path="whats-today-privacypolicy" element={<PrivacyPolicyWhatsToday />} />
-        <Route path="daily-deals-privacypolicy" element={<PrivacyPolicyDailyDeals />} />
-        <Route path="speed-test-privacypolicy" element={<PrivacyPolicyInternetSpeedTest />} />
-        <Route path="transformer-test-privacypolicy" element={<PrivacyPolicyTransformerTest />} />
+        {Object.keys(Data).map((key) => (
+          <Route path={key} element={<PP name={Data[key]} />} />
+        ))}
       </Routes>
     </BrowserRouter>
   );
 }
-
 
 export default App;
