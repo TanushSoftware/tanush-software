@@ -165,4 +165,4 @@ const PP = ({name}) => {
   );
 };
 
-export default PrivacyPolicy;
+export default PP;
